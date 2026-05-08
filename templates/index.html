@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saira Shabbir - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Saira Shabbir</h1>
+        <p>Student at COMSATS University Islamabad (Sahiwal Campus)</p>
+        <a href="https://www.linkedin.com/in/saira-shabbir-a38b3a389/" class="linkedin-btn" target="_blank">Connect on LinkedIn</a>
+    </header>
+
+    <div class="img-container">
+        <a href="{{ url_for('static', filename='profile.jpg') }}" target="_blank">
+            <img src="{{ url_for('static', filename='profile.jpg') }}" class="profile-img" alt="Saira Shabbir">
+        </a>
+    </div>
+
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> | 
+        <a href="{{ url_for('login') }}">Login</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a <b>4th-semester Computer Science student</b> at COMSATS University, Sahiwal. I have a strong interest in technology and social work.</p>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>🎓 <b>Education:</b> BSCS at COMSATS Sahiwal.</li>
+                <li>🌟 <b>Achievement:</b> Recipient of the <b>PEEF Scholarship</b>.</li>
+                <li>🩸 <b>Volunteering:</b> Active member of the <b>University Blood Donation Society (UBDS)</b>.</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-card">
+                <h3>Smart Glasses Prototype</h3>
+                <p>A hardware-based project focused on wearable technology concepts.</p>
+            </div>
+            <div class="project-card">
+                <h3>Hostel Wi-Fi Management</h3>
+                <p>Designed a network topology using Cisco Packet Tracer for efficient connectivity.</p>
+            </div>
+            <div class="project-card">
+                <h3>Transport Management System</h3>
+                <p>A database project built using Python and SQL to manage transport logistics.</p>
+            </div>
+            <div class="project-card">
+                <h3>Python Mobile App: Smart Budgeter</h3>
+                <p>A Kivy-based application for mobile-based expense tracking.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Details</h2>
+            <p>📧 Email: <a href="mailto:sairachaudhary946@gmail.com">sairachaudhary946@gmail.com</a></p>
+            <p>📞 Contact: 03134550471</p>
+        </section>
+    </div>
+</body>
+</html>

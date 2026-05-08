@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Saira Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container" style="text-align: center; margin-top: 100px;">
+        <h2>Admin Login</h2>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <button type="submit" class="linkedin-btn">Login</button>
+        </form>
+        <br>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>
